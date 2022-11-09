@@ -1,5 +1,5 @@
 ## Repositório dedicado à realização das atividades propostas no curso de Full Stack Javascript Developer
 ## T.EX
 <div>
-    <img align="center" alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/268139580086026240/1040029352173240350/Design_sem_nome_15.png">
+    <img align=50% alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/268139580086026240/1040029352173240350/Design_sem_nome_15.png">
  </div>
