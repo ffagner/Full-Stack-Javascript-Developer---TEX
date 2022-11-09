@@ -6,5 +6,4 @@
  </div>
  <div align="center">
     <p>Fagner Farias</p>
-    <p>Estudante e amante por tecnologia</p>
 </div>
