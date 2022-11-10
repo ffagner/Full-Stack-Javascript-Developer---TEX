@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO - LÓGICA</title>
+</head>
+<body>
+    <h1>DESAFIO - LÓGICA</h1>
+    <script>
+        const arr = [0, 0, 0]
+        const arrTemp = [0,0,0]
+        let cont = 0
+        let portasAberta = 0
+        let status = false
+
+        function aleatorio() {
+        for (i = 0; i < arr.length; i++) {
+            arr[i] = parseInt(Math.random() * 3 + 1)
+        }
+        }
+
+        function elementosIguais(arr){
+            let contador = 0
+            for(i = 0; i < arr.length; i++) {
+                if(arr[i] != arr[i + 1]){
+                    break
+                }else contador++
+            }
+            if (contador == 2){
+                console.log(`Porta aberta: ${portasAberta + 1}`);
+                return portasAberta++
+            } 
+        }
+
+        function arrIguais(arr, arrTemp){
+            let temp = 0
+            for(i = 0; i < arr.length; i++){
+                if(arr[i] == arrTemp[i]){
+                    temp++
+                }
+            }
+            if(temp == 3){
+                console.log(`Porta aberta: ${portasAberta + 1}`)
+                return portasAberta++
+            }
+        }
+
+        while (cont < 20) {
+            aleatorio()
+            elementosIguais(arr)
+            arrIguais(arr, arrTemp)
+            for(i = 0; i < arr.length; i++) {
+                arrTemp[i] = arr[i]
+            }
+            if(portasAberta == 3){
+                status = true
+                break
+            }
+                cont++
+        }
+        if(status){
+            console.log(`Você ganhou!`)
+        }else console.log(`mais sorte na próxima!`)
+    </script>
+</body>
+</html>
