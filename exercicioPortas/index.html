@@ -28,7 +28,7 @@
                     break
                 }else contador++
             }
-            if (contador == 2){
+            if (contador == arr.length - 1){
                 console.log(`Porta aberta: ${portasAberta + 1}`);
                 return portasAberta++
             } 
@@ -41,7 +41,7 @@
                     temp++
                 }
             }
-            if(temp == 3){
+            if(temp == arr.length){
                 console.log(`Porta aberta: ${portasAberta + 1}`)
                 return portasAberta++
             }
