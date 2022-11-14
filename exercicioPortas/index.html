@@ -10,7 +10,7 @@
     <h1>DESAFIO - LÓGICA</h1>
     <script>
         const arr = [0, 0, 0]
-        const arrTemp = [0,0,0]
+        // const arrTemp = [0,0,0]
         let cont = 0
         let portasAberta = 0
         let status = false
@@ -48,12 +48,11 @@
         }
 
         while (cont < 20) {
+            let arrTemp = [0,0,0]
             aleatorio()
             elementosIguais(arr)
             arrIguais(arr, arrTemp)
-            for(i = 0; i < arr.length; i++) {
-                arrTemp[i] = arr[i]
-            }
+            arrTemp = [...arr]
             if(portasAberta == 3){
                 status = true
                 break
